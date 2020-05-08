@@ -8,34 +8,6 @@
   <meta name="description" content="Just Test" />
   <meta name="author" content="Yordan" />
 
-  <!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-    
-    body {
-      font-family: "Open Sans";
-    }
-    
-    center {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-    }
-    
-  </style>
-
-</head>
-
-<body onload="startTime">
-  <div class="center">
-    <h2>YORDAN</h2>
-    <div id="txt"></div>
-  </div>
-  
   <script>
     function startTime() {
       var today = new Date();
@@ -53,6 +25,72 @@
       return i;
     }
   </script>
+
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+    
+    body {
+      font-family: "Open Sans";
+      height: 100%;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+    }
+
+    .row {
+      width: auto;
+      border: 1px solid orange;
+    }
+
+    .flex-item {
+      padding: 5px;
+      height: 20px;
+      margin: 10px;
+      line-height: 20px;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      text-align: center;
+    }
+    
+    .flex-clock {
+      padding: 5px;
+      height: 20px;
+      margin: 10px;
+      line-height: 20px;
+      color: white;
+      font-weight: light;
+      font-size: 1em;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body onload="startTime()">
+  <div class="container">
+    <div class="row">
+      <h2 class="flex-item">YORDAN</h2>
+      <div class="flex-clock" id="txt">lol</div>
+    </div>
+  </div>
+  
+
 </body>
 
 </html>
